@@ -1,0 +1,18 @@
+
+O que um arquivo PHP precisa ter para ser válido?
+-> Precisa começar com <?php e ter a extensão .php
+
+echo "Olá mundo" ;
+-> para exibirmos uma mensagem na tela para o usuário.
+
+php -a
+-> Isso abrirá o terminal interativo (ou "interactive shell"), 
+o que significa que conseguiremos interagir com o PHP e executar um código 
+linha a linha diretamente no terminal, sem a necessidade de ferramentas externas, 
+como arquivos ou editores de texto.
+
+php > quit
+-> para sair do terminal interativo.
+
+cls
+-> limpar terminal
