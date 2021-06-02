@@ -1,0 +1,16 @@
+// SERVIDOR PARA PROGRAMAR PHP NA WEB:
+
+// PHP já tem um servidor embutido
+// o comando para rodar o servidor é: php -S localhost:8080
+// a web sempre funciona no modelo de comunicação requisição e resposta
+// o protocolo da web se chama HTTP (Hyper Text Transfer Protocol)
+// as páginas web são construídas com a linguagem de marcação HTML, o navegador entende HTML
+// podemos misturar código PHP com código HTML
+// assim podemos criar HTML dinamicamente
+// para tal é preciso demarcar o código PHP, abrindo e fechando a tag PHP: <?php ... ?>
+// para imprimir algum valor podemos usar <?= $valor ?>
+
+//SUBINDO UM SERVIDOR NA LINHA DE COMANDO:
+// php -S localhost:8080
+// Abra o navegador e acesse o endereço:
+//http://localhost:8080/**nome do arquivo**.php

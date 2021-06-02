@@ -1,22 +1,7 @@
 <?php
 
-//Imprima no console os números ímpares de 1 a 100
-for ($i = 1; $i < 100; $i++) {
-    if ($i % 2 != 0) {
-        echo $i . PHP_EOL;
-    }
-}
-
-//Exibir a tabuada do multiplicador
-$multiplicador = 9;
-
-for ($t = 1; $t <= 10; $t++) {
-    echo "$multiplicador X $t = " . $t * $multiplicador . PHP_EOL;
-}
-
-//calculo do imc
-$peso = 70;
-$altura = 1.70;
+$peso = 65;
+$altura = 1.60;
 $imc = $peso / $altura ** 2;
 
 if ($imc < 18.5) {
