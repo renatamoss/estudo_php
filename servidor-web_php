@@ -1,16 +1,20 @@
-SERVIDOR PARA PROGRAMAR PHP NA WEB:
+***Servidos para programa PHP na Web***
 
-PHP já tem um servidor embutido
-o comando para rodar o servidor é: php -S localhost:8080
-a web sempre funciona no modelo de comunicação requisição e resposta
-o protocolo da web se chama HTTP (Hyper Text Transfer Protocol)
-as páginas web são construídas com a linguagem de marcação HTML, o navegador entende HTML
-podemos misturar código PHP com código HTML
-assim podemos criar HTML dinamicamente
-para tal é preciso demarcar o código PHP, abrindo e fechando a tag PHP: <?php ... ?>
-para imprimir algum valor podemos usar <?= $valor ?>
+PHP já tem um servidor embutido;
+-> O comando para rodar o servidor é: php -S localhost:8080
 
-SUBINDO UM SERVIDOR NA LINHA DE COMANDO:
+A web sempre funciona no modelo de comunicação requisição e resposta.
+O protocolo da web se chama HTTP (Hyper Text Transfer Protocol).
+As páginas web são construídas com a linguagem de marcação HTML, o navegador entende HTML.
+Podemos misturar código PHP com código HTML, assim podemos criar HTML dinamicamente;
+Para tal é preciso demarcar o código PHP, abrindo e fechando a tag PHP: <?php ... ?>
+Para imprimir algum valor podemos usar <?= $valor ?>
+
+Subindo um servidor na linha de comando:
 php -S localhost:8080
 Abra o navegador e acesse o endereço:
 http://localhost:8080/**nome do arquivo.php**
+
+
+Anotações feitas no Curso Introdução ao PHP: Primeiros passos com a linguagem -
+Trilha Formação em PHP da Alura. Carga horária 6hs - Concluído em 01-06-2021.

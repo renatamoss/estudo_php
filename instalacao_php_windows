@@ -1,28 +1,23 @@
-PHP Primeiros passos:
+***PHP Primeiros passos***
 
-PHP é uma linguagem de programação interpretada (embora por baixo dos panos aconteça uma "compilação")
-PHP é uma linguagem de propósito geral (para web, para desktop, para IOT, na linha de comando etc)
+PHP é uma linguagem de programação interpretada (embora por baixo dos panos aconteça uma "compilação").
+PHP é uma linguagem de propósito geral (para web, para desktop, para IOT, na linha de comando etc).
 O site oficial do PHP é https://php.net/
-Para executar um código em PHP o seu interpretador precisa ser instalado antes
-O arquivo principal de configuração é o php.ini
-Para o PHP funcionar na linha de comando, o sistema operacional precisa encontrá-lo no PATH
-O comando php -v imprime a versão do PHP instalado
-O comando php -a abre o shell interativo (CLI)
-Arquivos PHP geralmente possuem a extensão .php
 
+Para executar um código em PHP o seu interpretador precisa ser instalado antes;
+-> O arquivo principal de configuração é o php.ini
+-> Para o PHP funcionar na linha de comando, o sistema operacional precisa encontrá-lo no PATH.
+-> O comando php -v imprime a versão do PHP instalado.
+-> O comando php -a abre o shell interativo (CLI)
+-> Arquivos PHP geralmente possuem a extensão .php
 
-Instalação do PHP no Windows:
-
+***Instalação do PHP no Windows:
 PASSOS:
-Baixe e instale PHP:
-Site do download PHP é: https://www.php.net/downloads.php
-Adicione a pasta PHP na variável de ambiente PATH
-Renomeie o arquivo php.ini-development para php.ini
-Após instalação abre um terminal e digite o comando: php -v
-
-O primeiro passo será baixar o PHP em si. Nesse curso, utilizaremos a versão 7.3.4, a mais recente 
-na data da gravação. Se no momento que você estiver assistindo ao vídeo já existir uma versão mais nova, 
-você poderá utilizá-la sem problemas, desde que ela seja a versão 7.
+-> Baixe e instale PHP:
+-> Site do download PHP é: https://www.php.net/downloads.php
+-> Adicione a pasta PHP na variável de ambiente PATH
+-> Renomeie o arquivo php.ini-development para php.ini
+-> Após instalação abre um terminal e digite o comando: php -v
 
 Seguindo os passos no site, baixaremos ZIP disponível na página, que trará diversos arquivos, 
 dentre eles um executável do Windows (.exe). Esse é o programa que lerá o nosso código e 
@@ -54,7 +49,8 @@ Obviamente, iremos editá-los de acordo com as nossas necessidades.
 Porém, por enquanto, o php.ini-development já serve para o nosso propósito. 
 Portanto, vamos renomeá-lo para php.ini, tornando-o válido para ser lido.
 
-Feito isso, já temos todo o ambiente configurado para começarmos a desenvolver, 
-e o próximo passo é escrevermos códigos que possam ser lidos pelo PHP. 
+Feito isso, já temos todo o ambiente configurado para começarmos a desenvolver.
 
-FONTE: CURSO Introdução à linguagem PHP - ALURA
+
+Anotações feitas no Curso Introdução ao PHP: Primeiros passos com a linguagem -
+Trilha Formação em PHP da Alura. Carga horária 6hs - Concluído em 01-06-2021.

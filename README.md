@@ -7,7 +7,7 @@ Conceitos estudados:
 - Explorando o conceito de Orientação à Objetos: classes, atributos, variáveis e métodos;
 - Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces;
 - PHP e PDO: Trabalhando com bancos de dados;
-- PHP e MySQL: Introdução a uma webapp.
-- PHP na Web: padrão MVC;
+- PHP e MySQL: Introdução a uma webapp;
+- PHP na Web: padrão MVC.
 
 ![img_js](https://github.com/renatamoss/estudo_php/blob/main/php_img.png?raw=true)
