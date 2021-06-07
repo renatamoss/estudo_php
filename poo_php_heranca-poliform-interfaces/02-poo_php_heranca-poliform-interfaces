@@ -1,0 +1,49 @@
+***Programação Orientada à Objetos - PHP***
+***Herança - Poliformismo - Interfaces***
+
+Até aqui, já tínhamos visto dois dos quatro pilares da orientação a objetos: 
+-> Abstração; -> Encapsulamento;
+Agora estamos começando a falar do 3º pilar: -> Herança.
+
+Herança:
+Uma das formas de reutilizar código é fazendo uma classe estender outra, ou seja, 
+herdar tudo que uma classe base tem, e adicionar comportamentos específicos.
+Mas vale ressaltar que herança não é a solução para todos os problemas de reutilização de código. 
+Muitas vezes pode até ser prejudicial.
+-> parent: para acessar um membro da classe base.
+
+Em PHP temos três modificadores de acesso para os membros (atributos e/ou métodos) 
+definidos em nossas classes: public, protected e private.
+-> public: permite que todos possam acessar o membro, inclusive fora da classe onde foi definido; 
+-> protected: permite que a classe atual e as classes filhas tenham acesso;
+-> private: permite que apenas a classe atual tenha acesso.
+
+namespace:
+Definindo namespace podemos facilmente ter duas classes com o mesmo nome em namespaces diferentes.
+Com um namespace raiz para a nossa aplicação, evitamos conflitos com pacotes externos que viermos a utilizar.
+Para utilizar uma classe precisamos importá-la utilizando use ou informar seu nome completo (com namespace) 
+em todos os locais onde ela for utilizada;
+
+autoload:
+É um processo que busca as classes automaticamente, sem que seja necessário informar cada arquivo separadamente. 
+Esse processo precisa seguir algumas regras para atender ao padrão da PSR-4, como não poder gerar erros e 
+ter que utilizar uma pasta raiz e um namespace raiz para fazer o mapeamento, entre outras.
+Através de um autoloader com o PHP (spl_autoload_register) podemos evitar ficar utilizando require 
+para incluir todos os arquivos necessários para executar o programa;
+
+classe abstrata:
+São classes que ainda não estão prontas para serem instanciadas e precisam ser estendidas (classes abstratas);
+Uma classe abstrata não pode ser instanciada, pois ainda não está completa (não é concreta).
+Se uma classe tem algum método abstrato, ela também precisa ser abstrata. 
+Os métodos abstratos, são uma forma de "obrigar" que classes filhas implementem determinado método;
+
+
+
+
+Anotações feitas no Curso Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces -
+Trilha Formação em PHP da Alura. Carga horária 10hs - Concluído em .
+
+
+
+
+
