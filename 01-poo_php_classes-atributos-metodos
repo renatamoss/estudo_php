@@ -1,4 +1,4 @@
-***Programação Procedural***
+Programação Procedural:
 É um paradigma onde temos diversos procedimentos - que podem estar separados em outras funções, 
 por exemplo -, mas não temos essa divisão muito bem organizada.
 Não é um problema trabalhar dessa forma, mas existem outros paradigmas de desenvolvimento que surgiram 
@@ -10,7 +10,10 @@ inclusive fazendo operações sem nenhum sentido para nossas regras de negócio.
 Portanto, separar os dados de seus comportamentos é um grande problema da programação procedural.
 Estes problemas citados acima deverão ser resolvidos utilizando a POO.
 
-***POO - Programação Orientada à Objetos***
+
+***Programação Orientada à Objetos - PHP***
+***Classes - Atributos - Métodos***
+
 O nome Programação Orientada à Objetos vem do fato de que, a partir de uma classe, 
 podemos criar objetos que servirão de base para montarmos todo o sistema. 
 Sendo assim, o desenvolvimento deixa de ser orientado à funções, como na programação procedural, 

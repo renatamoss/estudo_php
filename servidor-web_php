@@ -1,4 +1,4 @@
-***Servidos para programa PHP na Web***
+***Servidor para programar PHP na Web***
 
 PHP já tem um servidor embutido;
 -> O comando para rodar o servidor é: php -S localhost:8080

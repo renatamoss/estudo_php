@@ -1,4 +1,4 @@
-# estudo_php
+# Repositório de estudos
 
 Este repositório terá a finalidade de detalhar estudos da linguagem de programação PHP.</br>
 Conceitos estudados:

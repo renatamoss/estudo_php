@@ -6,7 +6,7 @@ $string = 'Testes de integração com PHP';
 echo strlen($string) . PHP_EOL; 
 
 //função strtoupper transforma caracteres em uppercase(menos ç e ã)
-echo strtoupper($string) , PHP_EOL;
+echo strtoupper($string) . PHP_EOL;
 
 //função mb_strlen conta número de caracteres: 28
 echo mb_strlen($string) . PHP_EOL;
