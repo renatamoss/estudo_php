@@ -36,4 +36,18 @@ class Endereco
     {
         return $this->numero;
     }
+
+    public function __toString(): string
+    {
+        return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade} " . PHP_EOL;
+    }
+
+    //recupera por atributo utilizando o método mágico: 
+    public function __get($nomeAtributo)
+    {
+        $metodo = ucfirst($nomeAtributo);
+        $metodo = 'recupera' . $metodo;
+        return $this->$metodo();
+        exit();
+    }
 }
