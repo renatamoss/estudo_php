@@ -7,7 +7,7 @@ Este repositório terá a finalidade de detalhar estudos da linguagem de program
 - [x] A linguagem PHP: entendo a base da linguagem: array, string, função e web;
 - [x] Explorando o conceito de Orientação à Objetos: classes, atributos, variáveis e métodos;
 - [x] Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces;
-- [x] PHP e MySQL: Introdução a uma webapp;
+- [x] PHP e MySQL: Introdução à uma Webapp;
 - [x] PHP Brasil: Validação de dados no padrão nacional
 
 </br>

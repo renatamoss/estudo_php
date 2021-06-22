@@ -25,7 +25,7 @@ sempre códigos perfeitos sem nenhum tipo de correção a ser feita.
 <hr>
 
 ### Utilizando try - catch:
-Usando try/catch no trecho de código onde ocorre a exceção, conseguiremos, por exemplo, 
+Usando *try/catch* no trecho de código onde ocorre a exceção, conseguiremos, por exemplo, 
 mostrar uma mensagem na tela e continuar a execução do programa. 
 Não podemos ter um bloco catch sem um bloco try o precedendo. 
 Mas é possível que tenhamos um bloco try sem o catch, sendo só try e finally.
@@ -33,17 +33,19 @@ Mas é possível que tenhamos um bloco try sem o catch, sendo só try e finally.
 <hr>
 
 ### Tratar mais de uma exceção por vez, usa-se o multi-catch, com o operador:
-Através de um | (pipe) na cláusula catch, podemos capturar mais de uma exceção. 
+Através de um *| (pipe)* na cláusula *catch*, podemos capturar mais de uma exceção. 
 Com isso, podemos ter um único bloco para tratar uma ou mais exceções. </br>
 
-function funcao2() </br>
-{ </br>
-    echo 'Entrei na função 2' . PHP_EOL; </br>
-    $exception = new RuntimeException(); </br>
-    echo 'Saindo da função 2' . PHP_EOL; </br>
-} </br>
+~~~php
+function funcao2() 
+{ 
+    echo 'Entrei na função 2' . PHP_EOL;
+    $exception = new RuntimeException(); 
+    echo 'Saindo da função 2' . PHP_EOL; 
+} 
+~~~
 
-Sendo assim, em $exception temos uma referência a um objeto do tipo RuntimeException.
+Sendo assim, em $exception temos uma referência a um objeto do tipo *RuntimeException*.
 
 <hr>
 
@@ -52,25 +54,26 @@ A exceção nada mais é do que uma classe, logo, podemos instanciar exceções;
 Isso implica na possibilidade de criarmos um objeto dessa classe/tipo por meio da instrução new. 
 Uma exceção pode ter uma mensagem informada por meio do seu construtor. </br>
 
-try { </br>
-    $contaCorrente->deposita(-100); </br>
-} catch (InvalidArgumentException $exception) { </br>
-    echo "Valor a depositar precisa ser positivo."; </br>
-} </br>
+~~~php
+try { 
+    $contaCorrente->deposita(-100); 
+} catch (InvalidArgumentException $exception) { 
+    echo "Valor a depositar precisa ser positivo."; 
+} 
  
-class SaldoInsuficienteException extends \DomainException </br>
-{ </br>
-    public function __construct(float $valorSaque, float $saldoAtual) </br>
-    { </br>
-        $mensagem = "Você tentou sacar $valorSaque, mas tem apenas $saldoAtual em conta."; </br>
-        parent::__construct($mensagem); </br>
-    } </br>
-} </br>
-
+class SaldoInsuficienteException extends \DomainException 
+{ 
+    public function __construct(float $valorSaque, float $saldoAtual) 
+    { 
+        $mensagem = "Você tentou sacar $valorSaque, mas tem apenas $saldoAtual em conta."; 
+        parent::__construct($mensagem); 
+    } 
+} 
+~~~
 <hr>
 
 ### Os principais tipos de erros do PHP:
-Noticem, Warning, Error (erro fatal): 
+*Noticem, Warning, Error (erro fatal)*: 
 Normalmente, ferramentas especializadas em tratar erros cuidam dessa parte para nós.
 A Depuração é muito importante para encontrarmos possíveis problemas em nosso sistema.
 

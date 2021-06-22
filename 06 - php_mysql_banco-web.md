@@ -1,4 +1,4 @@
-# CURSO PHP E MYSQL - INTRODUÇÃO À UMA WEBAPP
+## PHP E MYSQL - Conceitos CRUD
 
 ### BACK-END:
 Linguagem de programação que funciona no lado do servidor:
@@ -27,13 +27,25 @@ o Apache é o servidor que vem junto com o Xampp.
 ### QUERY:
 É o nome dado a um comando (consulta), uma instrução na linguagem SQL a ser executada pelo banco de dados.
 
+~~~php
+$this->mysql->query('SELECT id, titulo, conteudo FROM artigos');
+~~~
+
 <hr>
 
-### Array superglobal *$_GET* e *$_POST*:
-- [x] O array superglobal *$_POST*: acessa os dados do formulário a partir do array enviadas ao servidor via HTTP.
-- [x] O array superglobal *$_GET* armazena todas as variáveis recebidas pela URL.</br>
+### Array superglobal *$_POST*:
+O array superglobal *$_POST* acessa os dados do formulário a partir do array enviado ao servidor via HTTP. </br>
+Ele utiliza o atributo *name* do HTML como chave do array.
 
-*Eles utilizam o atributo name do HTML como chave do array.*
+~~~php
+        <form action="adicionar-cadastro.php" method="post">
+~~~
+
+<hr>
+
+### Array superglobal *$_GET*:
+O array superglobal *$_GET* armazena todas as variáveis recebidas pela URL.</br>
+Ele utiliza o atributo *name* do HTML como chave do array.
 
 ~~~php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -45,14 +57,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $artigo = new Artigo($mysql);
 $art = $artigo->encontrarPorId($_GET['id']);
-
-?>
 ~~~
+
+<hr>
 
 ### Adicionar/remover/encontrar por id/editar-> usando o método *bind_param*:
 Vincula o valor recebido no ponto de interrogação para as variáveis do *bind_param*. 
 O método *bind_param* é responsável por este vínculo, isso faz parte de uma funcionalidade do 
-banco de dados chamada *prepared statements*. Cria a consulta SQL e executa (*execute()*):
+banco de dados chamada *prepared statements*.  </br>
+Prepara a consulta SQL e executa (*execute()*):
+
+- [x] *prepare* ->  comando sql, onde *values* são os valores armazenados no banco de dados, representados por uma *?*;
+- [x] *bind_param* -> contém as variáveis do *prepare*, onde as letras *'ss'* representam a quantidade de strings;
+- [x] *execute()*.
 
 ~~~php
     public function adicionar(string $titulo, string $conteudo): void
@@ -82,7 +99,7 @@ Ele utiliza os parâmetros: *MYSQÇLI_ASSOC, MYSQLI_NUM, MYSQLI_BOTH*.
 <hr>
 
 ### Encontrar por ID usando o método:
-- [x] *get_result*: Obtém um conjunto de resultados de uma instrução preparada;
+- [x] *get_result*: obtém um conjunto de resultados de uma instrução preparada;
 - [x] *fetch_assoc()*: retorna apenas uma linha por vez. 
 
 ~~~php
@@ -112,9 +129,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } 
 ~~~
 
+<hr>
+
 ### Padrão de projeto Post Redirect Get:
 Assim que termina as ações do post, faz-se um redirecionamento e pára a execução da página (*die()*).
-O nome deste padrão de projeto é o Post Redirect Get. Ele gerencia a requisição POST do formulário:
+O nome deste padrão de projeto é o Post Redirect Get. Ele gerencia a requisição POST do formulário. <br>
+- [x] header: adiciona um cabeçalho *http* com a *location: $url*
 
 ~~~php
 function redireciona(string $url): void

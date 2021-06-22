@@ -1,6 +1,6 @@
 <?php
 
-$mysql = new mysqli('localhost', 'root', '130819Ren@', 'blog');
+$mysql = new mysqli('localhost', 'root', 'senha mysql', 'blog');
 $mysql->set_charset('utf8');
 
 if($mysql == false) {
