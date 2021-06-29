@@ -80,6 +80,26 @@ Prepara a consulta SQL e executa (*execute()*):
     }
 ~~~
 
+Os tipos permitidos no método *bind_param* são:
+- [x] i – variáveis inteiras;
+- [x] d – variáveis double;
+- [x] s – variáveis string;
+- [x] b variáveis que fornecem dados para um blob.
+
+<hr>
+
+### SQL Injection:
+O médoto *bind_param*  na classe mysqli previne uma situação chamada *SQL Injection*.
+Ele usa usa parâmetros em “bind” para não haver nenhuma concatenação direta e nesse meio do “bind” 
+a classe trata o input para nada funcionar como uma injeção. </br>
+Veja abaixo o mesmo código acima SEM o método *bind_param*:
+
+~~~php
+$sql = "SELECT * FROM produtos WHERE titulo = '" . $_GET['titulo'] . "' AND quantidade = '" . $_GET['quantidade'] . "'";
+~~~
+
+SQL Injection é o nome dado a manipulação de dados SQL através de objetos input.
+
 <hr>
 
 ### Exibir todos utilizando o método *fetch_all*:
