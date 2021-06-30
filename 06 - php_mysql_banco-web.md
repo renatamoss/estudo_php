@@ -84,7 +84,6 @@ Os tipos permitidos no método *bind_param* são:
 - [x] i – variáveis inteiras;
 - [x] d – variáveis double;
 - [x] s – variáveis string;
-- [x] b variáveis que fornecem dados para um blob.
 
 <hr>
 
